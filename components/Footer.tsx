@@ -43,7 +43,7 @@ function Footer() {
     </div>
     <div className='flex flex-col gap-7'>
         <h1 className='text-xl font-semibold'>Support</h1>
-        <h2>FAQ's</h2>
+        <h2>FAQ</h2>
         <h2>Support Center</h2>
         <h2>Contact Us</h2>
     </div>
