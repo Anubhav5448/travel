@@ -2,16 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
+import Hamburger from "./Hamburger";
 
 function Header() {
   return (
-    <div className="w-full h-24  flex justify-around items-center ">
-      {/* logo */}
-      <Image src="/Logo.png" width={250} height={36} alt="logo" />
+    <div className="w-full h-28  flex justify-around items-center ">
+      <div className="relative hidden lg:inline-grid h-52 w-52">
+        {/* logo */}
+        <Image src="/Logo.png" fill objectFit="contain" alt="logo" />
+      </div>
+      <div className="relative lg:hidden  h-24 w-24">
+        {/* logo */}
+        <Image src="/logo-sm.png" fill objectFit="contain" alt="logo" />
+      </div>
+
 
 
       {/* Center */}
-      <div className="w-96 flex justify-between items-center">
+      <div className="w-96 hidden lg:flex justify-between items-center">
         <Link href="/">Home</Link>
         <Link href="/">About</Link>
         <Link href="/">Destination</Link>
@@ -21,10 +29,14 @@ function Header() {
 
       {/* Right */}
 
-      <div className="gap-6 flex">
+
+     
+
+      <div className="gap-6  hidden lg:flex ">
         <Button className="bg-white text-black hover:bg-white">Login</Button>
         <Button className="hover:bg-black">SignUp</Button>
       </div>
+      <Hamburger  />
     </div>
   );
 }

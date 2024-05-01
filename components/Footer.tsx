@@ -4,13 +4,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='h-60 w-[90%] p-5 flex justify-between my-10'>
+    <div className='h-60 w-[90%] p-5 flex flex-col lg:flex-row justify-between gap-7 my-10'>
         
 
-<div className=' w-72 flex flex-col justify-around'>
+<div className=' w-72 flex flex-col justify-around gap-5'>
 
 <Image src="/logo.png" width={150} height={30} alt='logo' />
-<p className='text-wrap'>Convenience: They handle the logistics and planning of trips, saving time and effort for the traveller</p>
+<p className='text-wrap text-xl font-semibold lg:text-base lg:font-medium '>Convenience: They handle the logistics and planning of trips, saving time and effort for the traveller</p>
 
 <div className='flex justify-around'>
     <InstagramIcon/>
@@ -22,7 +22,7 @@ function Footer() {
 </div>
 
 
-<div className='flex flex-row justify-between gap-10'>
+<div className='flex flex-col lg:flex-row justify-between gap-10'>
     <div className='flex flex-col gap-7'>
         <h1 className='text-xl font-semibold' >About</h1>
         <h2>About Us</h2>
