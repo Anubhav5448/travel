@@ -7,7 +7,7 @@ function Footer() {
     <div className='h-60 w-[90%] p-5 flex flex-col lg:flex-row justify-between gap-7 my-10'>
         
 
-<div className=' w-72 flex flex-col justify-around gap-5'>
+<div className=' lg:w-72 w-52 flex flex-col justify-around gap-5'>
 
 <Image src="/logo.png" width={150} height={30} alt='logo' />
 <p className='text-wrap text-xl font-semibold lg:text-base lg:font-medium '>Convenience: They handle the logistics and planning of trips, saving time and effort for the traveller</p>
